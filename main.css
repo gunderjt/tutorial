@@ -1,15 +1,54 @@
+/*Remove in production*/
+html {
+	height:100%
+}
+body{
+	height:100%
+}
+/*end "Remove in production"*/
+
 #top_menu {
 	background-color:ivory;
 	width:100%;
 	height:auto;
-	padding-top:5em;
-	text-align:"center";
+	text-align:center;
 }
 #bottom_menu {
 	background-color:lightcyan;
+	text-align:center;
+}
+#info_container{
+	background-color:lightblue;
+	height:auto;
+	width:100%;
+	text-align:center;
 }
 
+.instructions{
+	width:100%;
+}
+
+table {
+	width:100%;
+}
+
+tr {
+	
+	width:100%;
+}
+
+td {
+	width:50%;
+}
 button {
 	
 	
+}
+
+.hidden {
+	display: none;
+}
+
+.tutDesc {
+	float: right
 }
