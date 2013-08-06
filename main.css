@@ -19,13 +19,14 @@ body{
 }
 #info_container{
 	background-color:lightblue;
-	height:auto;
+	height: 100%;
 	width:100%;
-	text-align:center;
+	/* text-align:center; */
 }
 
 .instructions{
 	width:100%;
+	height: auto;
 }
 
 table {
@@ -49,6 +50,29 @@ button {
 	display: none;
 }
 
+.tutImage {
+	display: table-cell;
+	width:50%;
+	text-align: center;
+	border-style: dotted;
+}
+
 .tutDesc {
-	float: right
+	/* float: right; */
+	width:50%;
+	text-align: center;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	border-style: dotted;
+}
+
+.step {
+	
+    border-style: solid;
+    border-width: medium;
+    overflow: auto;
+    /* height: auto; */
+    display: table;
+    width: 100%;
 }
