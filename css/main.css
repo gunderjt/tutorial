@@ -8,17 +8,17 @@ body{
 /*end "Remove in production"*/
 
 #top_menu {
-	background-color:ivory;
+	
 	width:100%;
 	height:auto;
 	text-align:center;
 }
 #bottom_menu {
-	background-color:lightcyan;
+	
 	text-align:center;
 }
 #info_container{
-	background-color:lightblue;
+	
 	height: 100%;
 	width:100%;
 	/* text-align:center; */
