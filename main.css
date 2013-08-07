@@ -29,27 +29,6 @@ body{
 	height: auto;
 }
 
-table {
-	width:100%;
-}
-
-tr {
-	
-	width:100%;
-}
-
-td {
-	width:50%;
-}
-button {
-	
-	
-}
-
-.hidden {
-	display: none;
-}
-
 .tutImage {
 	display: table-cell;
 	width:50%;
@@ -75,4 +54,8 @@ button {
     /* height: auto; */
     display: table;
     width: 100%;
+}
+
+.hidden {
+	display: none;
 }

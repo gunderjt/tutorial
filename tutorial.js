@@ -11,4 +11,7 @@ $(document).ready( function() {
 		$(".instructions").addClass("hidden");
 		$("#mapP_8").removeClass("hidden");
 	});
+	$("#Hshot").on('click', function() {
+		$(".tutImage").toggleClass("hidden");
+	});
 });
