@@ -30,18 +30,19 @@ body{
 }
 
 .tutImage {
-	display: table-cell;
-	width:50%;
+	display: inline;
+	width: 59%;
 	text-align: center;
 	border-style: dotted;
+	float: left;
 }
 
 .tutDesc {
-	/* float: right; */
-	width:50%;
+	float: left;
+	width: 40%;
 	text-align: center;
-	height: 100%;
-	display: table-cell;
+	/* height: 100%; */
+	/* display: table-cell; */
 	vertical-align: middle;
 	border-style: dotted;
 }
@@ -52,7 +53,7 @@ body{
     border-width: medium;
     overflow: auto;
     /* height: auto; */
-    display: table;
+    /* display: table; */
     width: 100%;
 }
 
