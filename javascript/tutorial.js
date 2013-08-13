@@ -22,20 +22,30 @@ function animateTut(){
 		$(".tutDesc").animate({
 				width:"99%"},
 				{duration: 400, queue: false});
+		$(".nav").toggle();
+		$(".tutDesc p, h1").toggleClass("descOnly");
 		getNsetState(1);
 		}
 	else{
     	$(".tutImage").animate({
    				opacity: "1",
-    			width: "59%",
+    			width: "45%",
     			height: "toggle"},
     			{duration: 400, queue: false});
 		$(".tutDesc").animate({
-				width:"40%"},
-				{duration: 400, queue: false});
+				width:"54%"
+				}, {
+				duration: 400, 
+				queue: false 
+				}).promise().done(function(){
+					$(".nav").toggle();
+					$(".tutDesc p, h1").toggleClass("descOnly");
+				});
 		getNsetState(0);	
 	}
+	
 }
+
 
 function getNsetState(value){
 	//initialize the state of the program
@@ -50,10 +60,14 @@ function getNsetState(value){
 		return (getNsetState.state = value);
 	}
 }
+
 $(document).ready( function() {
-	window.JTGstate = 0;
 	$(".showContent").on('click', function () {	
 		showContent($(this).data('url'));
 	});
 	$("#Hshot").on('click', animateTut);
+	$.localScroll({
+		lazy: "true"
+	});
+
 });

@@ -8,53 +8,103 @@ body{
 /*end "Remove in production"*/
 
 #top_menu {
-	
 	width:100%;
 	height:auto;
 	text-align:center;
 }
 #bottom_menu {
-	
 	text-align:center;
 }
 #info_container{
-	
 	height: 100%;
-	width:100%;
-	/* text-align:center; */
+	width: 100%;
 }
 
 .instructions{
-	width:100%;
+	width: 100%;
 	height: auto;
 }
 
 .tutImage {
-	display: inline;
-	width: 59%;
+	width: 45%;
 	text-align: center;
-	border-style: dotted;
 	float: left;
+	-webkit-border-top-left-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    border-top-left-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-bottom-left-radius: 25px;
+	
+	background-color: #f5f5f5;
+	overflow-x: hidden;
 }
 
 .tutDesc {
 	float: left;
-	width: 40%;
+	width: 54%;
+	
+}
+
+.tutDesc p{
+	width: 95%;
+	position: relative;
+	left: 5%;
+	/* top: 20px; */
+	text-align: left;
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.tutDesc .descOnly{
+	left: 0px;
+	width: 100%;
 	text-align: center;
-	/* height: 100%; */
-	/* display: table-cell; */
-	vertical-align: middle;
-	border-style: dotted;
 }
 
 .step {
-	
+	position: relative;
     border-style: solid;
     border-width: medium;
-    overflow: auto;
-    /* height: auto; */
-    /* display: table; */
+	overflow: auto;
     width: 100%;
+    margin: 0 0 25px 0;
+    -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.nav{
+	height: 50px;
+	width: 400px;
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+}
+
+.nav .btn{
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #a4b183;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#E3E3E3));
+	background-image: -moz-linear-gradient(0% 0% 270deg,#666666, #E3E3E3);
+	-webkit-text-shadow: 1px 1px 5px #000;
+	-moz-text-shadow: 1px 1px 5px #000;
+	text-shadow: 1px 1px 5px #000;
+	font: normal 18px 'Cabin Condensed', Tahoma, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+em {
+	font: normal 24px 'Cabin Condensed', Tahoma, Arial, sans-serif;
+}
+
+strong{
+	font: bold 18px Tahoma, Arial, sans-serif;
 }
 
 .hidden {
