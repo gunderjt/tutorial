@@ -7,3 +7,6 @@ images
 images/MapPWin8/MapP_Win8_10.png
 images/MapPWin8/MapP_Win8_8-9.png
 /nbproject/private/
+/phpscript/createDatabase.php
+/phpscript/createTable.php
+/phpscript/insertInto.php
