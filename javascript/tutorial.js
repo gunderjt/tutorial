@@ -1,17 +1,17 @@
 //This function is called everytime an element with class="showContent" is clicked
-function showContentfunc(os){
+function showContentfunc(os, tut){
 
 //ajax is the defacto protocol for communicating between server and client without
 //having to reload the web page.  This is the jQuery syntax for ajax
 //The first parameter is the url that ajax will envoke, the second parameter is a JSON
 //for the options.
-    $.ajax('phpscript/renderHTML.php', {
+    $.ajax('phpscript/createJson.php', {
         //type: is the type of HTML request being made to the server
         type: "POST",
         //data: is a JSON object that is being sent to the server.  'osType' is
         //the key and 'os' is equal to whatever was passed as a parameter of
         //'showContentfunc().  (this is either "mac" "7" or "8")
-        data: {osType: os},
+        data: {osType: os, tutType: tut},
         //success: defines the function that is called if our ajax call is successful.
         //It takes the response from the server and puts it into
         //the info_container div 
@@ -117,7 +117,7 @@ $(document).ready( function() {
     //elements.  So $(this).data('os'), essentially finds the string that was
     //stored in the html under the 'data-os' attribute for the element that was clicked
     //and returns that string (eg. "mac" "7" "8")
-        showContentfunc($(this).data('os'));
+        showContentfunc($(this).data('os'), $(this).data('tut'));
     });
     
     //this is another event handler.  Everytime the element with the id="Hshot"

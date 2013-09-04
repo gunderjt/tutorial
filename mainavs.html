@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--to do:
+	1: Make large and small screenshots
+	2: correctly link the respective screenshots
+	3: Write out the actual steps for each action
+	-->
+<html>
+	<head>	
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="javascript/lightbox-2.6.min.js"></script>
+		<script src="javascript/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script src="javascript/jquery.localscroll-1.2.7-min.js"></script>
+		<script src="javascript/tutorial.js"></script>
+	</head>
+	<body>
+            <div id="top_menu" class="center">
+            <!-- This div has the buttons, that when clicked show the content (the rendered HTML) of the tutorial  
+            Two things to note: first, these elements have a class of "showContent" this
+            is important for my jQuery commands and second, is the data-os="something" attribute.  
+            Whatever is in this data attribute is passed onto the server via my ajax call, and used by the php script.
+            Now go to 'javascript/tutorial.js' and scroll to the part of the file that says "$(document).ready( function()" -->
+                <button class="showContent" data-os="7" data-tut='avs'>Windows 7</button>
+                <button class="showContent" data-os="8" data-tut='avs'>Windows 8</button>
+                <button id="Hshot">hide Screen</button>
+            </div>
+            <!--  This div isn't Implemented -->
+            <div id="bottom_menu">
+                <button>PDF Download</button>
+                <button>Video Tutorial</button>
+            </div>
+            
+            <div id="info_container">
+                
+            </div>
+            
+        </body>
+</html>
